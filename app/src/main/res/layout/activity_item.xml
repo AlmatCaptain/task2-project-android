@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".PassengerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_text_size"
+                android:paddingVertical="@dimen/text_ver_padding"
+                android:layout_marginHorizontal="@dimen/text_hor_margin"
+                android:text="Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_text_size"
+                android:layout_marginHorizontal="@dimen/text_hor_margin"
+                android:text="Seat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_text_size"
+                android:layout_marginHorizontal="@dimen/text_hor_margin"
+                android:text="Type" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/item_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_text_size"
+                android:paddingVertical="@dimen/text_ver_padding"
+                android:layout_marginHorizontal="@dimen/text_hor_margin"
+                android:text="Free seats" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/free_seat_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+    </LinearLayout>
+</FrameLayout>

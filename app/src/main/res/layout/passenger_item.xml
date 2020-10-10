@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_ver_padding">
+
+        <TextView
+            android:id="@+id/pass_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingVertical="@dimen/text_ver_padding"
+            android:textAlignment="center"
+            android:textSize="@dimen/item_text_size"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/pass_seat_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingVertical="@dimen/text_ver_padding"
+            android:textAlignment="center"
+            android:textSize="@dimen/item_text_size"
+            tools:text="Seat" />
+
+        <Button
+            android:id="@+id/pass_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="#32CD32"
+            android:paddingVertical="@dimen/text_ver_padding"
+            android:textSize="@dimen/item_text_size"
+            tools:text="status" />
+    </LinearLayout>
+
+</LinearLayout>

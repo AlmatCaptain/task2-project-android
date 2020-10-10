@@ -13,13 +13,14 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 class ItemsAdapter(
-    private val listItems: List<Bus> = listOf()
+    private val listItems: List<Bus> = listOf(),
+    private val clickListener: (Bus) -> Unit
 ) : RecyclerView.Adapter<ItemsAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
 
         @SuppressLint("NewApi", "SetTextI18n")
-        fun bindItem(item: Bus) {
+        fun bindItem(item: Bus, clickListener: (Bus) -> Unit) {
             view.direct.text = item.direct
             view.fromDate.text = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm").format(LocalDateTime.parse(item.fromDate)).toString()
             view.toDate.text = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm").format(LocalDateTime.parse(item.toDate)).toString()
@@ -30,6 +31,8 @@ class ItemsAdapter(
             Picasso.get()
                 .load(item.photoUrl)
                 .into(view.bus_image)
+
+            view.setOnClickListener { clickListener(item) }
         }
 
     }
@@ -42,7 +45,7 @@ class ItemsAdapter(
     override fun getItemCount() = listItems.size
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        holder.bindItem(listItems[position])
+        holder.bindItem(listItems[position], clickListener)
     }
 
 }
