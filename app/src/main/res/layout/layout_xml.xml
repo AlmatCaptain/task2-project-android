@@ -25,94 +25,109 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+
+            <ImageView
+                android:id="@+id/bus_image"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/bus_image"
-                    android:layout_width="187dp"
-                    android:layout_height="244dp"
-                    android:scaleType="centerCrop" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingLeft="10dp">
-
-                    <TextView
-                        android:id="@+id/direct"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textSize="@dimen/text_title"
-                        tools:text="Direct" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Departure"
-                        android:textSize="@dimen/text_size"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/fromDate"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textSize="@dimen/text_size"
-                        tools:text="Departure" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textSize="@dimen/text_size"
-                        android:text="Arrival"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/toDate"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textSize="@dimen/text_size"
-                        tools:text="Arrival" />
-                </LinearLayout>
-            </LinearLayout>
+                android:layout_height="180dp"
+                android:scaleType="centerCrop" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="@dimen/text_ver_padding">
+                android:paddingLeft="10dp">
 
                 <TextView
-                    android:id="@+id/bus_brand"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/direct"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    tools:text="brand" />
+                    android:gravity="center"
+                    android:textSize="@dimen/text_title"
+                    tools:text="Direct" />
 
-                <TextView
-                    android:id="@+id/bus_number"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    tools:text="number" />
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/bus_seat"
-                    android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Departure"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:id="@+id/fromDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size"
+                            tools:text="Departure" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/arrival"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:id="@+id/toDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size"
+                            tools:text="Arrival" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    tools:text="seat" />
+                    android:orientation="vertical"
+                    android:padding="@dimen/text_ver_padding">
 
+                    <TextView
+                        android:id="@+id/bus_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        tools:text="brand" />
+
+                    <TextView
+                        android:id="@+id/bus_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        tools:text="number" />
+
+                    <TextView
+                        android:id="@+id/bus_seat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        tools:text="seat" />
+
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

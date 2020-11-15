@@ -8,4 +8,10 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_schedule">Schedule</string>
+    <string name="menu_search">Search</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="search">Search</string>
+    <string name="date_button">15.11.2020</string>
+    <string name="arrival">Arrival</string>
 </resources>

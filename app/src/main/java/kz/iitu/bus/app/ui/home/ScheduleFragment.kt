@@ -18,32 +18,36 @@ import kz.iitu.bus.app.model.Bus
 class ScheduleFragment : Fragment() {
 
     val items = listOf<Bus>(
-        Bus(
+        Bus(155,
             "A123",
             "Almaty-Nursultan",
             "YOKOKO",
             40,
             "https://wallpapershome.ru/images/pages/ico_v/9771.jpg",
             "2020-09-29T09:55:00",
-            "2020-09-29T15:55:00"
+            "2020-09-29T15:55:00",
+            emptyMap()
         ),
         Bus(
+            15,
             "B777",
             "Shym-Taldyk",
             "Xiaomi",
             100,
             "https://www.robertharding.com/watermark.php?type=preview&im=RM/RH/VERTICAL/83-4487",
             "2020-10-01T09:55:00",
-            "2020-10-02T15:55:00"
+            "2020-10-02T15:55:00",
+            emptyMap()
         ),
-        Bus(
+        Bus(1505,
             "X13PP",
             "Semey-Karagandy",
             "TOYOTA",
             50,
             "https://thumbs.dreamstime.com/z/american-school-bus-vertical-parked-street-waiting-end-class-front-door-open-dull-weather-back-view-104476388.jpg",
             "2020-10-15T09:55:00",
-            "2020-10-16T15:55:00"
+            "2020-10-16T15:55:00",
+            emptyMap()
         )
     )
 
