@@ -26,24 +26,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-//        AsyncTask.execute {
-//            AppDatabase.getInstance(this)?.getBusDao()?.insertBus(
-//                Bus(
-//                    "A123",
-//                    "Almaty-Nursultan",
-//                    "YOKOKO",
-//                    40,
-//                    "https://wallpapershome.ru/images/pages/ico_v/9771.jpg",
-//                    "2020-09-29T09:55:00",
-//                    "2020-09-29T15:55:00",
-//                    emptyMap()
-//                )
-//            )
-//        }
+
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
-
 
         appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_search, R.id.nav_schedule), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)

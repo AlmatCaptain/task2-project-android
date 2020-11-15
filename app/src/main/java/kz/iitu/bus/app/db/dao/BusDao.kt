@@ -14,6 +14,6 @@ interface BusDao {
     @Query("SELECT * FROM bus")
     fun getItems(): List<Bus>
 
-    @Query("SELECT * FROM bus WHERE busNumber =:busNumber")
-    fun getItems(busNumber: String?): List<Bus>
+    @Query("SELECT * FROM bus WHERE direct =:direct")
+    fun getItems(direct: String?): List<Bus>
 }

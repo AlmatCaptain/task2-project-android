@@ -14,4 +14,5 @@
     <string name="search">Search</string>
     <string name="date_button">15.11.2020</string>
     <string name="arrival">Arrival</string>
+    <string name="refresh">Insert DB</string>
 </resources>

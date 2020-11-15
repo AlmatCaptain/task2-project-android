@@ -55,7 +55,7 @@
                 android:id="@+id/date_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/text_margin"
+                android:layout_marginEnd="@dimen/margin_space_items"
                 android:layout_weight="1"
                 android:background="#fcff61"
                 android:text="@string/date_button"
@@ -67,7 +67,7 @@
                 android:id="@+id/search_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/text_margin"
+                android:layout_marginStart="@dimen/margin_space_items"
                 android:layout_weight="1"
                 android:background="#3ee66b"
                 android:text="@string/search"
@@ -78,5 +78,18 @@
 
 
     </LinearLayout>
-
+    <Button
+        android:id="@+id/refresh_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin"
+        android:layout_weight="1"
+        android:background="#3ee66b"
+        android:text="@string/refresh"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/sign_in_size"
+        android:layout_marginBottom="@dimen/margin_space_items"
+        tools:ignore="ButtonStyle" />
 </RelativeLayout>
