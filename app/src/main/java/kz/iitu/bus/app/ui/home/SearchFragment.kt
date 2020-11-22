@@ -29,6 +29,7 @@ class SearchFragment : Fragment() {
             photoUrl = "https://www.sustainable-bus.com/wp-content/uploads/2019/12/scania-bus4.jpg",
             fromDate = "2020-11-20T09:55:00",
             toDate = "2020-11-21T15:55:00",
+            price = 5000,
             seatsMap = mapOf(1 to true, 5 to true, 20 to true, 21 to true)
         ),
         Bus(
@@ -39,6 +40,7 @@ class SearchFragment : Fragment() {
             photoUrl = "https://parking.duke.edu/sites/default/files/styles/large/public/GoDurham%20Bus1.jpg?itok=QDCNqowL",
             fromDate = "2020-12-01T09:55:00",
             toDate = "2020-12-02T15:55:00",
+            price = 3000,
             seatsMap = mapOf(2 to true, 3 to true, 10 to true, 15 to true)
         ),
         Bus(
@@ -49,6 +51,7 @@ class SearchFragment : Fragment() {
             photoUrl = "https://upload.wikimedia.org/wikipedia/commons/5/5b/TOYOTA_FCHV_Bus.jpg",
             fromDate = "2020-11-15T09:55:00",
             toDate = "2020-11-16T15:55:00",
+            price = 6000,
             seatsMap = mapOf(5 to true, 8 to true, 9 to true, 19 to true)
         )
     )

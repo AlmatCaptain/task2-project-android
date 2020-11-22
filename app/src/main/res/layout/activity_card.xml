@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/card_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/card_num_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_credit_card_24"
+        android:hint="Card number"
+        android:inputType="number"
+        app:mask="____-____-____-____" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/uin_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#808080"
+        app:boxBackgroundColor="@color/white_color"
+        app:boxStrokeColor="@color/white_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/person_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:hint="Cardowner"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/date_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:hint="Validity"
+            android:inputType="number"
+            app:mask="__/__" />
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/cvv_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:drawableStart="@drawable/ic_baseline_security_24"
+            android:hint="CVV"
+            android:inputType="numberPassword"
+            app:mask="___" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="#3ee66b"
+        android:text="Pay"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sign_in_size" />
+</LinearLayout>

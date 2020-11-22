@@ -15,4 +15,5 @@
     <string name="date_button">15.11.2020</string>
     <string name="arrival">Arrival</string>
     <string name="refresh">Insert DB</string>
+    <string name="to_book_text">To book</string>
 </resources>

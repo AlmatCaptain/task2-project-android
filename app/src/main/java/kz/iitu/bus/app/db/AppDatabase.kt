@@ -3,13 +3,16 @@ package kz.iitu.bus.app.db
 import android.content.Context
 import androidx.room.*
 import kz.iitu.bus.app.db.dao.BusDao
+import kz.iitu.bus.app.db.dao.OrderDao
 import kz.iitu.bus.app.model.Bus
+import kz.iitu.bus.app.model.Order
 
-@Database(entities = [Bus::class], version = 1)
+@Database(entities = [Bus::class, Order::class], version = 1)
 @TypeConverters(MapConverter::class)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun getBusDao(): BusDao
+    abstract fun getOrderDao(): OrderDao
 
     companion object {
 
